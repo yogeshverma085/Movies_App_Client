@@ -1,0 +1,168 @@
+.navbar {
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: linear-gradient(to top, transparent 0%, #000 50%);
+}
+
+.navbar.scrolled {
+    background-color: rgb(20, 19, 19);
+    position: fixed;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+}
+
+.navbar .container .left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .container .left img {
+    height: 25px;
+    margin-right: 40px;
+}
+
+.navbar .container .left span {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.navbar .container .right {
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar .container .right .icon {
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+.navbar .container .right img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.navbar .container .right .profile .options {
+    display: none;
+    background-color: rgb(20, 19, 19);
+    border-radius: 5px;
+}
+
+.navbar .container .right .profile span {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navbar .container .right .profile:hover .options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: -20px;
+}
+
+@media only screen and (max-width: 575px) {
+    .navbar {
+        font-size: 15px;
+        font-weight: 500;
+        padding: 10px;
+
+    }
+
+    .navbar .container {
+        height: 20px;
+    }
+
+    .navbar .container .left img {
+        height: 15px;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+
+    .navbar .container .right img {
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+    }
+
+    .navbar .container .left span {
+        margin-right: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 475px) {
+    .navbar {
+        font-size: 13px;
+        padding: 8px;
+
+    }
+
+    .navbar .container .left img {
+        height: 14px;
+        margin-right: 14px;
+    }
+
+    .navbar .container .right img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .navbar .container .left span {
+        margin-right: 8px;
+    }
+}
+
+@media only screen and (max-width: 395px) {
+    .navbar {
+        font-size: 11.8px;
+
+    }
+
+    .navbar .container .left img {
+        height: 12px;
+    }
+
+    .navbar .container .right img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .navbar .container .left span {
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 341px) {
+    .navbar {
+        font-size: 11px;
+
+    }
+
+    .navbar .container .left img {
+        height: 10px;
+    }
+
+    .navbar .container .left span {
+        margin-right: 3px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .navbar {
+        font-size: 9px;
+
+    }
+}

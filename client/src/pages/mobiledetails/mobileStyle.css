@@ -1,0 +1,129 @@
+.mobile {
+    background-color: rgb(20, 19, 19);
+    height: fit-content;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 3px;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+    padding: 10px;
+    font-weight: 500;
+    width: 20px;
+
+}
+
+.back span {
+    text-shadow: 1px 1px black;
+}
+
+.mobile video {
+    width: 100%;
+    object-fit: cover;
+}
+
+.mobile .item-info .title {
+    color: white;
+    font-size: x-large;
+    font-weight: 600;
+    padding: 7px 0;
+}
+
+.mobile .item-info .genre {
+    font-size: large;
+    font-weight: 600;
+    color: rgb(109, 174, 227);
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile .item-info .is-series {
+    font-size: small;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: -4px;
+}
+
+.play-btn {
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    padding: 8px;
+
+}
+
+.play-btn .play-icon {
+    margin-right: 10px;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+
+.play-btn span {
+    color: rgb(0, 0, 0);
+    font-size: large;
+    ;
+}
+
+.mobile .item-info .icons {
+    display: flex;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+}
+
+.mobile .item-info .icons .icon {
+    font-size: x-large;
+    margin: 0 26px;
+    color: gray;
+}
+
+.disc {
+    color: white;
+    font-size: medium;
+    padding-bottom: 10px;
+}
+
+.mobile .item-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 17px;
+    padding-bottom: 300px;
+}
+
+.mobile .item-info .itemInfoDown {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mobile .item-info .itemInfoDown .match {
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(47, 194, 86);
+    margin-right: 10px;
+}
+
+.mobile .item-info .itemInfoDown .limit {
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: white;
+    font-size: small;
+    font-weight: 400;
+    background-color: rgb(50, 48, 48);
+    padding: 0px 2px;
+    margin-right: 10px;
+}
+
+.mobile .item-info .itemInfoDown .year {
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    margin-right: 10px;
+}
