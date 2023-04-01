@@ -1,0 +1,281 @@
+.featured {
+    position: relative;
+}
+
+.category {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.category select {
+    cursor: pointer;
+    background-color: var(--main-color);
+    border: 1px solid white;
+    color: white;
+    margin-left: 20px;
+    padding: 4px;
+    font-size: 15px;
+}
+
+.featured .title-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+.con-img {
+    opacity: 0.6;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+.info {
+    width: 35%;
+    position: absolute;
+    left: 50px;
+    bottom: 150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.info img {
+    width: 400px;
+}
+
+.desc {
+    margin: 20px 0px;
+    width: 120%;
+    font-weight: 100;
+    text-shadow: 1px 1px black;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.play {
+    background-color: white;
+    color: var(--main-color);
+}
+
+.more {
+    background-color: gray;
+    color: white;
+}
+
+.buttons button span {
+    margin-left: 5px;
+}
+
+/* .info span {
+    font-size: 2vw;
+} */
+@media only screen and (max-width:1020px) {
+    .category {
+        top: 40px;
+        left: 50px;
+        font-size: 17px;
+    }
+
+    .category select {
+        font-size: 14px;
+    }
+
+    .info {
+
+        bottom: 30px;
+    }
+
+    .info img {
+        width: 300px;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .category {
+        top: 30px;
+        left: 50px;
+        font-size: 17px;
+    }
+
+    .category select {
+        font-size: 14px;
+    }
+
+    .info {
+        width: 35%;
+        left: 50px;
+        bottom: 30px;
+    }
+
+    .info img {
+        width: 200px;
+    }
+
+    .desc {
+        margin: 10px 0px;
+    }
+
+    .buttons button span {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width:668px) {
+    .category {
+        top: 30px;
+        left: 50px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .category select {
+        font-size: 13px;
+    }
+
+    .info {
+        bottom: 25px;
+    }
+
+    .info img {
+        width: 160px;
+    }
+
+    .desc {
+        margin: 6px 0px;
+    }
+
+    .buttons button {
+        padding: 5px 17px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .buttons button svg {
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width:530px) {
+    .category {
+        top: 30px;
+        left: 30px;
+        font-size: 13px;
+        font-size: 15px;
+    }
+
+    .category select {
+        font-size: 11px;
+    }
+
+    .info {
+        bottom: 15px;
+        left: 30px;
+    }
+
+    .info img {
+        width: 200px;
+    }
+
+    .info span {
+        font-size: 2.5vw;
+    }
+
+    .desc {
+        margin: 4px 0px;
+    }
+
+    .buttons button {
+        padding: 3px 6px;
+        font-weight: 400;
+    }
+
+    .buttons button svg {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .category {
+        top: 20px;
+        left: 20px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .category select {
+        font-size: 10px;
+        padding: 1px;
+    }
+
+    .info {
+        bottom: 10px;
+        left: 20px;
+    }
+
+    .desc {
+        margin: 3.5px 0px;
+    }
+
+    .buttons button {
+        padding: 4px 9px;
+        font-weight: 400;
+    }
+
+
+
+}
+
+@media only screen and (max-width:325px) {
+    .category {
+        top: 20px;
+        font-size: 9px;
+    }
+
+    .category select {
+        font-size: 6px;
+        padding: 1px;
+    }
+
+    .info {
+        bottom: 10px;
+    }
+
+    .info img {
+        width: 170px;
+    }
+
+    .buttons button {
+        padding: 3px 6px;
+        font-size: 10px;
+
+    }
+
+    .buttons button svg {
+        font-size: small;
+    }
+
+}

@@ -1,0 +1,105 @@
+.register {
+    width: 100vw;
+    height: 130vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 150%), url("https://assets.nflxext.com/ffe/siteui/vlv3/84526d58-475e-4e6f-9c81-d2d78ddce803/a76c1727-34da-4d80-99a3-69476e78860d/IN-en-20221228-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.register .top .wrapper {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.register .top .wrapper .logo {
+    height: 40px;
+}
+
+.register .top .wrapper .loginButton {
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.register .container {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.register .container h2 {
+    margin: 20px;
+}
+
+
+.register .container .input {
+    /* width: 50%; */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.register .container .input input {
+    flex: 9;
+    height: 100%;
+    border: none;
+    padding: 0 10px;
+}
+
+.register .container .input .registerButton {
+    flex: 3;
+    height: 100%;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:768px) {
+    .register .top .wrapper .logo {
+        height: 20px;
+    }
+
+    .register .top .wrapper .loginButton {
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+
+    .register .container .input {
+        display: block;
+    }
+
+    .register .container .input .first-input {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .register .container .input .registerButton {
+        width: 90px;
+        position: relative;
+    }
+
+    .register .container .input .second-input {
+        margin-bottom: 20px;
+    }
+
+}
